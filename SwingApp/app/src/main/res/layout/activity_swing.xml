@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.utkar.swingapp.SwingActivity">
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <ImageButton
+        android:id="@+id/dire"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickok"
+        android:src="@drawable/two"
+        app:layout_constraintBottom_toTopOf="@+id/visit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <ImageButton
+        android:id="@+id/food"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="50dp"
+        android:onClick="onClickok"
+        android:src="@drawable/three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <ImageButton
+        android:id="@+id/visit"
+        android:layout_width="147dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/dire"
+        android:onClick="onClickok"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/food"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/visit"
+        android:paddingLeft="50dp"
+        android:onClick="onClickok"
+        android:src="@drawable/four"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+</android.support.constraint.ConstraintLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="8dp"
+    android:paddingTop="0dp"
+    android:orientation="vertical"></LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:layout_gravity="top"
+    android:id="@+id/inii"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="top"
+
+        android:orientation="vertical">
+
+
+        <ViewFlipper
+            android:id="@+id/image_view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="gogo">
+
+            <ImageView
+                android:id="@+id/image_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClickok"
+                android:src="@drawable/imgc" />
+
+            <ImageView
+                android:id="@+id/image_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:onClick="onClickok"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/imgb" />
+
+            <ImageView
+                android:id="@+id/image_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClickok"
+                android:src="@drawable/imga" />
+
+            <ImageView
+                android:id="@+id/image_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:onClick="onClickok"
+                android:src="@drawable/imgd" />
+
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

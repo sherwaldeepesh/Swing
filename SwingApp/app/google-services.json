@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "88051672507",
+    "firebase_url": "https://swingapp-e254d.firebaseio.com",
+    "project_id": "swingapp-e254d",
+    "storage_bucket": "swingapp-e254d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88051672507:android:b50f3c18b1676722",
+        "android_client_info": {
+          "package_name": "com.example.utkar.swingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88051672507-64rr6ae910meir2pifbs96618l54ft5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.utkar.swingapp",
+            "certificate_hash": "1cee914725109ee82ba0ed4c354529d0676130ce"
+          }
+        },
+        {
+          "client_id": "88051672507-u7sbg85suf04qpl4l033pfrgvfacu7kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDADfhBm4bbXfCwVTevSIq5oUfW-p_z1JQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88051672507-u7sbg85suf04qpl4l033pfrgvfacu7kc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
